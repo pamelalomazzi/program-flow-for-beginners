@@ -11,7 +11,7 @@
     "preview": "",
     "difficulty": "EASY",
     "duration": 4,
-    "template_url": null,
+    "template_url": "self",
     "gitpod": true,
     "technologies": [
         "programming-logic",
