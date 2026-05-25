@@ -16,5 +16,8 @@ const answer = `
 flowchart TD
     A[start] --> B[end]
 `;
-
+A("Inicio") --> B["Hervir agua"]
+    B["Hervir agua"] --> C["Preparar cafe"]
+    C["Preparar cafe"] --> D["Servir"]
+    D["Servir"] --> F("Fin")
 module.exports = answer.trim();

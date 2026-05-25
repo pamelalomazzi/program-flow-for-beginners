@@ -13,6 +13,12 @@ const answer = `
 flowchart TD
     A[start] --> B[end]
 `;
+A("Inicio") --> B["Ingresar edad"]
+    B["Ingresar edad"] --> C{"¿Edad >=18?"}
+    C{"¿Edad >=18?"} -->|Si| D["Permitido beber alcohol"]
+    C{"¿Edad >=18?"} -->|No| E["No permitido beber alcohol"]
+    D["Permitido beber alcohol"] --> F("Fin")
+    E["No permitido beber alcohol"] --> F("Fin")
 
 // Do not modify this
 module.exports = answer.trim();
