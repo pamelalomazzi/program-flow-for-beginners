@@ -9,5 +9,13 @@ const answer = `
 flowchart TD
     A[start] --> B[end]
 `;
-
+A("Inicio") --> B["Entrada color del semafoto"]
+    B["Entrada color del semafoto"] --> C{"¿Color?"}
+    C{"¿Color?"} --> E["Reducir la velocidad"]
+    C{"¿Color?"} --> F["Detenerse"]
+    C{"¿Color?"} --> D["Avanzar"]
+    D["Avanzar"] --> G["Casa"]
+    F["Detenerse"] --> G["Casa"]
+    E["Reducir la velocidad"] --> G["Casa"]
+    G["Casa"] --> H("Fin")
 module.exports = answer.trim();
